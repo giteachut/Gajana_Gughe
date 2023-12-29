@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="Made with ❤ by Jorge Epuñan - @csslab">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+
+    <!-- Latest Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link href="website.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Latest Bootstrap JS (including Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Your Website JS -->
+    <script src="website.js"></script>
+    <!-- Latest jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Latest Bootstrap 4 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Popper.js for Bootstrap 4 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest jQuery Fancybox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <!-- Latest jQuery Fancybox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+</head>
+<body > <!-- Adjust the padding value based on your navbar height -->
+
+<!-- Navbar Section -->
+
+<section >
+    <div class="container-fluid rounded-3 fixed-top " id="navbar" style="background: linear-gradient(90deg, #278d27, #f97D09, #f97D09);">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                <button class="navbar-toggler border-black " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon align-content-center" src="Assets/BJP_logo_Bharatiya_Janata_Party.png" alt="BJP Logo"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav me-auto fw-bold text-capitalize">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#About">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#News">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Work">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Footer">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</section>
+        <div id="Home">
+            <header class=" logo container-fluid mt-5 p-3 ">
+                <div class="col-lg-12">
+                    <div class="logo " >
+                        <img class="img-fluid  " src="/Assets/heading banner.jpg" alt="logo" >
+                    </div>
+                </div>
+            </header>
+        </div>
+<!-- End Navbar Section -->
+
+<!-- Photo Section Carousel -->
+    <section>
+            <div class="container-fluid ">
+                <div header class="row">
+                    <div class="col-sm-12">
+                <!--Carousel Wrapper-->
+                <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+                <!--Indicators-->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-2" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-2" data-slide-to="2"></li>
+                </ol>
+                <!--/.Indicators-->
+                <!--Slides-->
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                    <div class="view">
+                        <img class="d-block w-100" src="Assets/symbol.png"
+                        alt="First slide">
+                        <div class="mask rgba-black-light"></div>
+                    </div>
+                    <div class="carousel-caption">
+                        <h3 class="h3-responsive">Light mask</h3>
+                        <p>First text</p>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                    <!--Mask color-->
+                    <div class="view">
+                        <img class="d-block w-100" src="Assets/heading banner.jpg"
+                        alt="Second slide">
+                        <div class="mask rgba-black-strong"></div>
+                    </div>
+                    <div class="carousel-caption bg-info-subtle">
+                        <h3 class="h3-responsive">Strong mask</h3>
+                        <p>Secondary text</p>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                    <!--Mask color-->
+                    <div class="view">
+                        <img class="d-block w-100" src="Assets/symbol.png"
+                        alt="Third slide">
+                        <div class="mask rgba-black-slight"></div>
+                    </div>
+                    <div class="carousel-caption">
+                        <h3 class="h3-responsive">Slight mask</h3>
+                        <p>Third text</p>
+                    </div>
+                    </div>
+                </div>
+                <!--/.Slides-->
+                <!--Controls-->
+                <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon visually-hidden" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon visually-hidden" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                <!--/.Controls-->
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+<!-- End Photo Section Carousel -->
+
+<!-- Home Section  -->
+    <section id="About" >
+    <div class="container-fluid ">
+        <div header class="row">
+            <div class="col-lg-12">
+                <div class="about-header">
+                    <h1 class="text-center">About Me</span></h1>
+                    <p class="text-center"> About Page discription </p>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12 col-sm-12 ">
+                                <div class="home-content p-5 ">
+                                    <h1 class="text-center">Welcome to <span class="text-primary">Website</span></h1>
+                                        <p class="text-center"> About Page discription </p>
+                                            <div class="home-btn text-center">
+                                                <!-- <button class="btn btn-primary">Get Started</button> -->
+                                            <!-- <button class="btn btn-outline-primary">Learn More</button> -->
+                                                </div>
+                                                </div>
+                                            </div>
+                                    <div class=" col-md-6">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="image-container">
+                                                        <img src="Assets/pexels-cottonbro-studio-4709290.jpg" class="img-fluid" width="100%" alt="Your Image">
+                                                        <div class="image-info">
+                                                            <h3>Image Title</h3>
+                                                            <p>Image Description or Additional Information</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+</section>
+<!-- End Home Section  -->
+
+<!-- Photo gallery -->
+
+<section id="News" class="news mb-3">
+	<div class="container">
+
+		<div class="row  ">
+
+			<div class="gallery col-lg-12 ">
+				<h1 class="gallery-title">News</h1>
+			</div>
+
+			<div class="text-center">
+				<button class="filter-button rounded-3" onclick="filterImages('all')" data-filter="all">All</button>
+				<button class="filter-button rounded-3" onclick="filterImages('category1')" data-filter="category1">Political</button>
+				<button class="filter-button rounded-3" onclick="filterImages('category2')" data-filter="category2">Social</button>
+				<button class="filter-button rounded-3" onclick="filterImages('category3')" data-filter="category3">Others</button>
+			</div>
+			
+			<br/>
+            <div class="gallery_product col-sm-3 col-xs-6 filter category1 mb-3">
+                <a class="fancybox" rel="ligthbox" href="https://picsum.photos/400/250?image=122">
+                    <img class="img-responsive" alt="" src="https://picsum.photos/400/250?image=122" />
+                    <div class='img-info'>
+                        <h4>Image Title 1</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-6 filter category2 mb-3 ">
+                <a class="fancybox" rel="ligthbox" href="https://picsum.photos/400/250?image=526">
+                    <img class="img-responsive" alt="" src="https://picsum.photos/400/250?image=526" />
+                    <div class='img-info'>
+                        <h4>Image Title 2</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-6 filter category3 mb-3">
+                <a class="fancybox" rel="ligthbox" href="https://picsum.photos/400/250?image=626">
+                    <img class="img-responsive" alt="" src="https://picsum.photos/400/250?image=626" />
+                    <div class='img-info'>
+                        <h4>Image Title 3</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-6 filter category1 mb-3">
+                <a class="fancybox" rel="ligthbox" href="https://picsum.photos/400/250?image=626">
+                    <img class="img-responsive" alt="" src="https://picsum.photos/400/250?image=626" />
+                    <div class='img-info'>
+                        <h4>Image Title 4</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-6 filter category2 mb-3">
+                <a class="fancybox" rel="ligthbox" href="https://picsum.photos/400/250?image=486">
+                    <img class="img-responsive" alt="" src="https://picsum.photos/400/250?image=486" />
+                    <div class='img-info'>
+                        <h4>Image Title 5</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-6 filter category3 mb-3">
+                <a class="fancybox" rel="ligthbox" href="https://picsum.photos/400/250?image=846">
+                    <img class="img-responsive" alt="" src="https://picsum.photos/400/250?image=846" />
+                    <div class='img-info'>
+                        <h4>Image Title 6</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-6 filter category1 mb-3">
+                <a class="fancybox" rel="ligthbox" href="https://picsum.photos/400/250?image=1066">
+                    <img class="img-responsive" alt="" src="https://picsum.photos/400/250?image=1066" />
+                    <div class='img-info'>
+                        <h4>Image Title 7</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-6 filter category2 mb-3">
+                <a class="fancybox" rel="ligthbox" href="https://picsum.photos/400/250?image=506">
+                    <img class="img-responsive" alt="" src="https://picsum.photos/400/250?image=506" />
+                    <div class='img-info'>
+                        <h4>Image Title 8</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-6 filter category3 mb-3">
+                <a class="fancybox" rel="ligthbox" href="https://picsum.photos/400/250?image=1026">
+                    <img class="img-responsive" alt="" src="https://picsum.photos/400/250?image=1026" />
+                    <div class='img-info'>
+                        <h4>Image Title 9</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-6 filter category1 mb-3">
+                <a class="fancybox" rel="ligthbox" href="https://picsum.photos/400/250?image=1077">
+                    <img class="img-responsive" alt="" src="https://picsum.photos/400/250?image=1077" />
+                    <div class='img-info'>
+                        <h4>Image Title 10</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-6 filter category2 mb-3">
+                <a class="fancybox" rel="ligthbox" href="https://picsum.photos/400/250?image=102">
+                    <img class="img-responsive" alt="" src="https://picsum.photos/400/250?image=102" />
+                    <div class='img-info'>
+                        <h4>Image Title 11</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-6 filter category3 mb-3">
+                <a class="fancybox" rel="ligthbox" href="https://picsum.photos/400/250?image=106">
+                    <img class="img-responsive" alt="" src="https://picsum.photos/400/250?image=106" />
+                    <div class='img-info'>
+                        <h4>Image Title 12</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </a>
+            </div>
+		</div>
+	</div>
+</section>
+
+<!-- Position Held -->
+
+<section>
+    <h1>Position Held</h1>
+    <div class="row img-fluid">
+<div class="container col-lg-8 bg-info-subtle rounded-3 g-0" >
+
+    <div id="timeline">
+        <div class="disabled visually-hidden">
+        <ul id="dates">
+        <li><a href="#1984">1984</a></li>
+        <li><a href="#1987">1987</a></li>
+        <li><a href="#1991">1991</a></li>
+        <li><a href="#1992">1992</a></li>
+        <li><a href="#1993">1993</a></li>
+        <li><a href="#1995">1995</a></li>
+        <li><a href="#1996">1996</a></li>
+        <li><a href="#1997">1997</a></li>
+        <li><a href="#1998">1998</a></li>
+        <li><a href="#1999">1999</a></li>
+        <li><a href="#2000">2000</a></li>
+        <li><a href="#2001">2001</a></li>
+        <li><a href="#2002">2002</a></li>
+        <li><a href="#2004">2004</a></li>
+        <li><a href="#2006">2006</a></li>
+        <li><a href="#2007">2007</a></li>
+        <li><a href="#2009">2009</a></li>
+        <li><a href="#2014">2014</a></li>
+        <li><a href="#2015">2015</a></li>
+        <li><a href="#2016">2016</a></li>
+    </ul>
+</div>
+    <ul id="issues">
+        <li id="1984" >
+
+        <h1>1984</h1>
+        <p>DKN Hotels founded with the acquisition of the Surf Motel Carlsbad, CA</p>
+        <br>
+        <p>Acquisition of the Marco Polo Inn Anaheim, CA (repositioned as: Days Inn)</p>
+        </li>
+
+        <li id="1987">
+
+        <h1>1987</h1>
+        <p>Acquisition of the Park Vue Anaheim, CA (repositioned as: Econo Lodge)</p>
+        </li>
+        <li id="1991">
+
+        <h1>1991</h1>
+        <p>Acquisition of the Quality Inn in Ontario, CA (repositioned as: Holiday Inn Express)</p>
+        <br>
+        <p>Construction of the Econo Lodge Flagstaff East, AZ (repositioned as: Days Inn)</p>
+        </li>
+        <li id="1992">
+
+        <h1>1992</h1>
+        <p>Acquisition of the Sandman Inn Anaheim, CA (repositioned as: Ramada Limited)</p>
+        </li>
+        <li id="1993">
+
+        <h1>1993</h1>
+        <p>Acquisition of the Summer House Inn in San Diego, CA</p>
+        </li>
+        <li id="1995">
+
+        <h1>1995</h1>
+        <p>Acquisition of the Comfort Inn San Diego (repositioned as: Holiday Inn Express)</p>
+        <br>
+        <p>Acquisition of the Harbor Inn Anaheim, CA (repositioned as: Comfort Inn)</p>
+        <br>
+        <p>Construction of the Hampton Inn Flagstaff East (repositioned as: Country Inn & Suites)
+        </p>
+        </li>
+        <li id="1996">
+
+        <h1>1996</h1>
+        <p>Acquisition of the Travelodge Midway San Diego, CA</p>
+        <br>
+        <p>Acquisition of the Midway Motel in San Diego, CA (repositioned as: Travelodge SeaWorld)</p>
+        </li>
+        <li id="1997">
+
+        <h1>1997</h1>
+        <p>Acquisition of the Newport Bay Inn in Costa Mesa, CA (repositioned as: Holiday Inn Express)</p>
+        <br>
+        <p>Acquisition of the Newport Beach Inn in Newport Beach, CA (repositioned as: Best Western)</p>
+        <br>
+        <p>Acquisition of he Travelodge in San Marcos, CA (repositioned as: Ramada Limited)
+        </p>
+        </li>
+        <li id="1998">
+
+        <h1>1998</h1>
+        <p>Acquisition of the Days Inn I-40 in Flagstaff, AZ</p>
+        <br>
+        <p>Acquisition of the Days Inn in San Diego, CA (repositioned as: Best Western)</p>
+        <br>
+        <p>Acquisition of the Del Norte Inn in Camarillo, CA (repositioned as: Holiday Inn Express)</p>
+        <br>
+        <p>Acquisition of the Quality Inn in Fresno, CA</p>
+        </p>
+        </li>
+        <li id="1999">
+
+        <h1>1999</h1>
+        <p>Acquisition of the Days Inn Route 66 in Flagstaff, AZ</p>
+        <br>
+        <p>Acquisition of the Quality Suites in San Clemente, CA (repositioned as: Hampton Inn & Suites)</p>
+        <br>
+        <p>Acquisition of the Conestoga Hotel in Anaheim, CA (repositioned as: Holiday Inn & Suites)</p>
+        </p>
+        </li>
+        <li id="2000">
+
+        <h1>2000</h1>
+        <p>Acquisition of the Best Western Desert Villa Inn in Barstow, CA</p>
+        </li>
+        <li id="2001">
+
+        <h1>2001</h1>
+        <p>Acquisition of the Newport Classic Inn in Newport Beach, CA (repositioned as: Holiday Inn Express)</p>
+        <br>
+        <p>Acquisition of the Goodnite Inn in Ontario, CA</p>
+        <br>
+        <p>Acquisition of the Laguna Beach Inn in Laguna Beach, CA</p>
+        </li>
+        <li id="2002">
+
+        <h1>2002</h1>
+        <p>Acquisition of the Best Western Westwood Hotel in Los Angeles, CA (repositioned as: Holiday Inn Express)</p>
+        <br>
+        <p>Acquisition of the Super 8 Motel in Flagstaff, AZ</p>
+        <br>
+        <p>Acquisition of the Best Western Raffles Inn in Anaheim, CA</p>
+        </li>
+        <li id="2004">
+
+        <h1>2004</h1>
+        <p>Acquisition of the Fairfield Inn in Buena Park, CA </p>
+        <br>
+        <p>Acquisition of the Heritage Hotel in Sacramento, CA (repositioned as Courtyard Inn and Fairfield Inn)</p>
+        <br>
+        <p>Construction of the New Town Place in Sacramento, CA</p>
+        <br>
+        <p>Acquisition of the Fairfield Inn in Placentia, CA (repositioned as: Quality Inn)</p>
+        </li>
+        <li id="2006">
+
+        <h1>2006</h1>
+        <p>Acquisition of the Amerisuites Hotel in Ontario, CA (repositioned as: Hyatt Place)</p>
+        </li>
+
+        <li id="2007">
+
+        <h1>2007</h1>
+        <p>Acquisitioon of the Country Plaza Inn in San Clemente, CA (repositioned as: Holiday Inn Express)</p>
+        </li>
+
+        <li id="2009">
+
+        <h1>2009</h1>
+        <p>Construction of the Hilton Garden Inn in San Bernardino, CA</p>
+        </li>
+
+        <li id="2014">
+
+        <h1>2014</h1>
+        <p>Construction of the SpringHill Suites Anaheim Maingate in Anaheim, CA</p>
+        <br>
+        <p>Acquisition of the Cardiff-by-the-Sea Lodge in Cardiff-by-the-Sea, CA</p>
+        <br>
+        <p>Acquisition of the Hilton Hotel in San Bernardino, CA (repositioned as: DoubleTree)</p>
+        </li>
+
+        <li id="2015">
+
+        <h1>2015</h1>
+        <p>Acquisition of the Wyndham Garden Ventura Pierpont Inn in Ventura, CA</p>
+        <br>
+        <p>Construction of the Residence Inn in Rancho Cucamonga, CA</p>
+        <br>
+        <p>Construction of the Hampton Inn & Suites in Murrietta, CA</p>
+        <br>
+        <p>Construction of the Homewood Suites in Irvine, CA</p>
+        </li>
+
+        <li id="2016">
+
+        <h1>2016</h1>
+        <p>Construction of the SpringHill Suites in Carlsbad, CA</p>
+        </li>
+    </ul>
+    <div id="grad_left" ></div>
+    <div id="grad_right"></div>
+    <a href="#" id="next" class="bi bi-arrow-left-short">+</a>
+    <a href="#" id="prev" class="bi bi-arrow-right-short">-</a>
+    </div>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.timelinr/0.9.54/jquery.timelinr.min.js"></script>
+    <script src="path/to/your/js/jquery.tilinr-0.9.54.js"></script>
+    <script src="script.js"></script> -->
+    <script>
+    $(function() {
+        $().timelinr({
+        // Set to true or remove the arrowKeys option if not needed
+        arrowKeys: true
+        });
+    });
+    </script>
+
+</section>
+
+    
+
+<!-- Work Section -->
+    <section id="Work">
+        <div class="container mt-3 g-0">
+            <h1 class="text-center">Work Section</span></h1>
+            <!-- 1st -->
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="work-img p-3">
+                        <img src="Assets/pexels-cottonbro-studio-4709290.jpg" alt="work" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12  bg-danger-subtle">
+                    <div class="work-content p-5">
+                        <h1 class="text-center"> Work done by </span></h1>
+                        <p class="text-center">Home Page discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Ab exercitationem omnis eius eaque, quas expedita consequatur fuga quidem vel, beatae minima
+                                optio molestias obcaecati reiciendis repudiandae enim illo aut? Obcaecati.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 2nd -->
+            <div class="row">
+                <div class="col-lg-6 col-sm-6 col-sm-6">
+                    <div class="work-content p-5">
+                        <h1 class="text-center "> Work Info </span></h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum,
+                            nisi lorem egestas vitae scel<span id="Work1-dots">...</span><span id="Work1-more">erisque enim ligula venenatis dolor.
+                                Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.
+                                Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis.
+                                Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum.
+                                Sed dapibus pulvinar nibh tempor porta.</span>
+                        </p>
+            
+                        <button class="readmore btn btn-outline-primary btn-sm" onclick="toggleReadMore('Work1')" id="Work1-myBtn">Read more</button>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6 col-sm-6 ">
+                    <div class="work-img p-3">
+                        <img src="Assets/pexels-cottonbro-studio-4709290.jpg" alt="work" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <!-- 3rd -->
+            <div class="row">
+                <div class="col-lg-6 col-sm-6 col-sm-6 ">
+                    <div class="work-img p-3 ">
+                        <img src="Assets/pexels-cottonbro-studio-4709290.jpg" alt="work" class="img-fluid">
+                        </div>
+                        </div>
+                            <div class="col-lg-6 col-sm-6 col-sm-6 bg-info-subtle  rounded-circle">
+                                <div class="work-content p-5">
+                                    <h1 class="text-center">Work Info</span></h1>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum,
+                                        nisi lorem egestas vitae scel<span id="Work2-dots">...</span><span id="Work2-more">erisque enim ligula venenatis dolor.
+                                            Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.
+                                            Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis.
+                                            Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum.
+                                            Sed dapibus pulvinar nibh tempor porta.</span>
+                                    </p>
+                        
+                                    <button class="read_more btn btn-outline-primary btn-sm" onclick="toggleReadMore('Work2')" id="Work2-myBtn">Read more</button>
+                                </div>
+                </div>
+            </div>
+            <!-- 4th -->
+            <div class="row">
+                <div class="col-lg-6 col-sm-6 col-sm-6 ">
+                    <div class="work-content p-5">
+                        <h1 class="text-center">Work Info   </span></h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum,
+                            nisi lorem egestas vitae scel<span id="Work3-dots">...</span><span id="Work3-more">erisque enim ligula venenatis dolor.
+                                Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.
+                                Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis.
+                                Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum.
+                                Sed dapibus pulvinar nibh tempor porta.</span>
+                        </p>
+            
+                        <button class="read_more btn btn-outline-primary btn-sm " onclick="toggleReadMore('Work3')" id="Work3-myBtn">Read more</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-sm-6 col-sm-6 ">
+                    <div class="work-img p-3">
+                        <img src="Assets/pexels-cottonbro-studio-4709290.jpg" alt="work" class="img-fluid">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+<!-- End Work Section -->
+
+<!-- modal form -->
+<section >
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+        <div class="modal-content">
+            <div class="modal-header bg-info-subtle">
+            <h1 class="modal-title fs-5 " id="exampleModalLabel">Form </h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body ">
+            <form>
+                <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Name:</label>
+                <input type="text" class="form-control" id="recipient-name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label">Email:</label>
+                    <input type="text" class="form-control" id="recipient-name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label">Phone:</label>
+                    <input type="tel" class="form-control" id="recipient-name" required>
+                </div>
+                <div class="mb-3">
+                <label for="message-text" class="col-form-label">Message:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+                </div>
+            </form>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary rounded-3" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary rounded-3" onclick="addEventListener()" >Send message</button>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+<section id="Footer">
+    <!-- Footer -->
+    <footer class="bg-body-tertiary text-center">
+    <!-- Grid container -->
+    <div class="container p-4 g-0">
+    <!--Grid row-->
+    <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0 align-content-start">
+        <h3 class="text-uppercase">Office Address</h3>
+
+        <p><i class="bi bi-geo-alt-fill"></i>
+            Dnyaneshwari Niwas, Naik Nagar, In front of Collector Office, Hingoli, Maharashtra 431513 <br> <br>
+            <i class="bi bi-telephone-fill">+91 9422175988 / +91 8888037777</i> <br>
+            <i class="bi bi-envelope-fill"> gajanan4141ghuge@gmail.com</i>
+        </p>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6">
+        <h3 class="text-uppercase "></h3>
+
+            <ul class="list-unstyled  d-grid text-black">
+            <li>
+            <a href="#Home" class="text-body">Home</a>
+            </li>
+            <li>
+            <a href="#About" class="text-body">About Me</a>
+            </li>
+            <li>
+            <a href="#News" class="text-body">News</a>
+            </li>
+            <li>
+            <a href="#Work" class="text-body">Work</a>
+            </li>
+        </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0 ">
+        <h5 class="text-uppercase mb-2" >Social</h5>
+
+        <ul class=" list-unstyled d-flex justify-content-between">
+            <li>
+            <a href="https://www.facebook.com/MLAGajananraoGhuge/" class="social-icon"><i class="bi bi-facebook "></i></a>
+        </li>
+            <li>
+            <a href="https://www.instagram.com/gajananghugeofficial" class="social-icon"><i class="bi bi-instagram"></i></a>
+        </li>
+            <li>
+            <a href="https://twitter.com/Gajananvghuge" class="social-icon"><i class="bi bi-twitter"></i></a>
+        </li>
+            <li>
+            <a href="https://www.youtube.com/@gajananghuge3749" class="social-icon"><i class="bi bi-youtube"></i></a>
+        </li>
+            <li>
+            <a href="https://www.linkedin.com/in/gajanan-ghuge-9b1b3b1b1/" class="social-icon " ><i class="bi bi-linkedin"></i></a>
+        </li>
+
+        </ul>
+        </div>
+        <!--Grid column-->
+        </div>
+        <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center font-monospace" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2023 Designed by
+        <a href="https://kayadhusoftware.com/" target="_blank" class=" mt-3">Kayadhu Software</a>      </div>
+        <!-- Copyright -->
+    </footer>
+<!-- Footer -->
+</section>
+<!-- End Footer Section -->
+</body>
+</html>
