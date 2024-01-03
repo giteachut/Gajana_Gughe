@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // Default position
   dates[0].click();
 });
-
+// end of timeline
 
 
 // end of timeline
