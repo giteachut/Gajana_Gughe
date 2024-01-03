@@ -23,6 +23,9 @@
     <script src="website.js"></script>
     <!-- Latest jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- Add this to your <head> section -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <!-- Axios -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- Latest Bootstrap 4 CSS -->
@@ -78,7 +81,7 @@
             <header class=" logo container-fluid mt-5 p-3 ">
                 <div class="col-lg-12">
                     <div class="logo " >
-                        <img class="img-fluid  " src="/Assets/heading banner.jpg" alt="logo" >
+                        <img class="img-fluid  " src="Assets/heading banner.jpg" alt="logo" >
                     </div>
                 </div>
             </header>
@@ -86,7 +89,7 @@
 <!-- End Navbar Section  -->
 
 <!-- Photo Section Carousel -->
-    <section>
+    <section class="moving">
             <div class="container-fluid p-5 mt-0 ">
                 <div header class="row h-50">
                     <div class="col-sm-12 ">
@@ -108,10 +111,10 @@
                         alt="First slide">
                         <div class="mask rgba-black-light"></div>
                     </div>
-                    <div class="carousel-caption">
+                    <!-- <div class="carousel-caption ">
                         <h3 class="h3-responsive">Light mask</h3>
                         <p>First text</p>
-                    </div>
+                    </div> -->
                     </div>
                     <div class="carousel-item">
                     <!--Mask color-->
@@ -120,10 +123,10 @@
                         alt="Second slide">
                         <div class="mask rgba-black-strong"></div>
                     </div>
-                    <div class="carousel-caption">
+                    <!-- <div class="carousel-caption">
                         <h3 class="h3-responsive">Strong mask</h3>
                         <p>Secondary text</p>
-                    </div>
+                    </div> -->
                     </div>
                     <div class="carousel-item">
                     <!--Mask color-->
@@ -132,10 +135,10 @@
                         alt="Third slide">
                         <div class="mask rgba-black-slight"></div>
                     </div>
-                    <div class="carousel-caption">
+                    <!-- <div class="carousel-caption">
                         <h3 class="h3-responsive">Slight mask</h3>
                         <p>Third text</p>
-                    </div>
+                    </div> -->
                     </div>
                     <div class="carousel-item">
                     <!--Mask color-->
@@ -144,11 +147,12 @@
                         alt="Fourth slide">
                         <div class="mask rgba-black-slight">
                     </div>
-                    <div class="carousel-caption">
+                    <!-- <div class="carousel-caption">
                         <h3 class="h3-responsive">Slight mask</h3>
                         <p>Fourth text</p>
-
-                </div>
+                    </div> -->
+                    </div>
+                    </div>
                 <!--/.Slides-->
                 <!--Controls-->
                 <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
@@ -234,160 +238,115 @@
             <div class="gallery_product col-sm-3 col-xs-6 filter category1 mb-3">
                 <a class="fancybox" rel="ligthbox" href="">
                     <img class="img-fluid" alt="" src="Assets/new/political 1.jpg" />
-                    <div class='img-info'>
+                    <!-- <div class='img-info'>
                         <h4>Image Title 1</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
+                    </div> -->
                 </a>
             </div>
 
             <div class="gallery_product col-sm-3 col-xs-6 filter category2 mb-3 ">
                 <a class="fancybox" rel="ligthbox" href="">
                     <img class="img-fluid" alt="" src="Assets/new/news 1.jpg" />
-                    <div class='img-info'>
-                        <h4>Image Title 2</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
+                    
                 </a>
             </div>
 
             <div class="gallery_product col-sm-3 col-xs-6 filter category3 mb-3">
                 <a class="fancybox" rel="ligthbox" href="">
                     <img class="img-fluid" alt="" src="Assets/new/social 1.jpg" />
-                    <div class='img-info'>
-                        <h4>Image Title 3</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
+                    
                 </a>
             </div>
 
             <div class="gallery_product col-sm-3 col-xs-6 filter category1 mb-3">
                 <a class="fancybox" rel="ligthbox" href="">
                     <img class="img-fluid" alt="" src="Assets/new/political 2.jpg" />
-                    <div class='img-info'>
-                        <h4>Image Title 4</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
+                    
                 </a>
             </div>
 
             <div class="gallery_product col-sm-3 col-xs-6 filter category2 mb-3">
                 <a class="fancybox" rel="ligthbox" href="">
                     <img class="img-fluid" alt="" src="Assets/new/news 2.jpg" />
-                    <div class='img-info'>
-                        <h4>Image Title 5</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
+                    
                 </a>
             </div>
 
             <div class="gallery_product col-sm-3 col-xs-6 filter category3 mb-3">
                 <a class="fancybox" rel="ligthbox" href="">
                     <img class="img-fluid" alt="" src="Assets/new/social 2.jpg" />
-                    <div class='img-info'>
-                        <h4>Image Title 6</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
+                    
                 </a>
             </div>
 
             <div class="gallery_product col-sm-3 col-xs-6 filter category1 mb-3">
                 <a class="fancybox" rel="ligthbox" href="">
                     <img class="img-fluid" alt="" src="Assets/new/political 3.jpg" />
-                    <div class='img-info'>
-                        <h4>Image Title 7</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
+                    
                 </a>
             </div>
 
             <div class="gallery_product col-sm-3 col-xs-6 filter category2 mb-3">
                 <a class="fancybox" rel="ligthbox" href="">
                     <img class="img-fluid" alt="" src="Assets/new/news 3.jpg" />
-                    <div class='img-info'>
-                        <h4>Image Title 8</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
+                    
                 </a>
             </div>
 
             <div class="gallery_product col-sm-3 col-xs-6 filter category3 mb-3">
                 <a class="fancybox" rel="ligthbox" href="">
                     <img class="img-fluid" alt="" src="Assets/new/social 3.jpg" />
-                    <div class='img-info'>
-                        <h4>Image Title 9</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
+                    
                 </a>
             </div>
 
             <div class="gallery_product col-sm-3 col-xs-6 filter category1 mb-3">
                 <a class="fancybox" rel="ligthbox" href="">
                     <img class="img-fluid" alt="" src="Assets/new/political 4.jpg" />
-                    <div class='img-info'>
-                        <h4>Image Title 10</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
+                    
                 </a>
             </div>
 
             <div class="gallery_product col-sm-3 col-xs-6 filter category2 mb-3">
                 <a class="fancybox" rel="ligthbox" href="">
                     <img class="img-fluid" alt="" src="Assets/new/news 4.jpg" />
-                    <div class='img-info'>
-                        <h4>Image Title 11</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
+                    
                 </a>
             </div>
 
             <div class="gallery_product col-sm-3 col-xs-6 filter category3 mb-3">
                 <a class="fancybox" rel="ligthbox" href="">
                     <img class="img-fluid" alt="" src="Assets/new/social 4.jpg" />
-                    <div class='img-info'>
-                        <h4>Image Title 12</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
+                    
                 </a>
             </div>
 
             <div class="gallery_product col-sm-3 col-xs-6 filter category1 mb-3">
                 <a class="fancybox" rel="ligthbox" href="">
                     <img class="img-fluid" alt="" src="Assets/new/political 5.jpg" />
-                    <div class='img-info'>
-                        <h4>Image Title 13</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
+                    
                 </a>
             </div>
 
             <div class="gallery_product col-sm-3 col-xs-6 filter category2 mb-3">
                 <a class="fancybox" rel="ligthbox" href="">
                     <img class="img-fluid" alt="" src="Assets/new/news 5.jpg" />
-                    <div class='img-info'>
-                        <h4>Image Title 14</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
+                    
                 </a>
             </div>
 
             <div class="gallery_product col-sm-3 col-xs-6 filter category3 mb-3">
                 <a class="fancybox" rel="ligthbox" href="">
                     <img class="img-fluid" alt="" src="Assets/new/social 5.jpg" />
-                    <div class='img-info'>
-                        <h4>Image Title 15</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
+                    
                 </a>
             </div>
 
             <div class="gallery_product col-sm-3 col-xs-6 filter category3 mb-3">
                 <a class="fancybox" rel="ligthbox" href="">
                     <img class="img-fluid" alt="" src="Assets/new/social 6.jpg" />
-                    <div class='img-info'>
-                        <h4>Image Title 16</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
+                    
                 </a>
             </div>
         </div>
