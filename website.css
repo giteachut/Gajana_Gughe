@@ -368,11 +368,36 @@ h2 {
 .social-icon {
   font-size: 24px; /* Adjust the size as needed */
   margin-right: 10px; /* Adjust the space between icons */
-  background: linear-gradient(45deg, #278d27, #f97D09);
+  /* background: linear-gradient(45deg, #278d27, #f97D09);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+
+
+/* styles.css */
+}
+.facebook-icon {
+  color: #3b5998; /* Facebook official color */
+}
+
+.instagram-icon {
+  /* color: #e4405f; Instagram official color */
+  background: linear-gradient(45deg, #e4405f,  #3b5998);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
 }
+
+.twitter-icon {
+  color: #1da1f2; /* Twitter official color */
+}
+
+.youtube-icon {
+  color: #cd201f; /* YouTube official color */
+}
+
+.linkedin-icon {
+  color: #0077b5; /* LinkedIn official color */
+}
+
 
 .work-img img {
   transition: transform 0.3s ease-in-out;
@@ -387,4 +412,10 @@ h2 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
 
+.list-unstyled {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-top: 15px;
+  
+}
 /* end footer  */
