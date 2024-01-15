@@ -343,6 +343,7 @@ h2 {
       display:block;
        -webkit-transition: 2s;
         transition: 2s;
+        overflow: hidden;
     }
     
     .gallery_product img {
@@ -353,12 +354,16 @@ h2 {
   
   .gallery_product img:hover {
       transform: translateY(-10px) scale(1.1);
+      overflow: hidden;
   }
     /*	end gallery */
 @media only screen and (max-width: 768px) {
   .gallery-item {
     flex: 1 0 calc(50% - 20px);
   }
+}
+.custom-footer a:hover{
+  color: orangered;
 }
 
 /*	end gallery */
